@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/content_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
+        <ViewStub
+            android:id="@+id/blocking_wait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/include_blocking_spinner_view"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

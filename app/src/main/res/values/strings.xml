@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EarthQuakeLite</string>
+
+    <string name="error_occurred">Sorry! An error occurred!</string>
+
+    <string name="no_data_available">There is no data for this request!</string>
+
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="east">East</string>
+    <string name="west">West</string>
+
+    <string name="show_earthquakes">Show Earthquakes</string>
+    <string name="date_of_event">Date of Event:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude: </string>
+    <string name="depth">Depth:</string>
+    <string name="magnitude">Magnitude:</string>
+
+    <string name="error_fields_can_not_be_empty">Fields can not be empty</string>
+    <string name="error_incorrect_format_of_input">Please make sure input values are decimal</string>
+    <string name="error_north_coordinate_invalid">North coordinate is invalid</string>
+    <string name="error_south_coordinate_invalid">South coordinate is invalid</string>
+    <string name="error_east_coordinate_invalid">East coordinate is invalid</string>
+    <string name="error_west_coordinate_invalid">West coordinate is invalid</string>
+
+</resources>

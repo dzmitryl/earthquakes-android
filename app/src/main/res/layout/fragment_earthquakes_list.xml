@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="org.dzlebedzeu.earthquakelite.fragment.EarthquakesListFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/north_input_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/north_input"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:hint="@string/north"
+            android:textSize="12sp"
+            android:inputType="numberSigned|numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/south_input_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/north_input_layout">
+
+        <EditText
+            android:id="@+id/south_input"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:hint="@string/south"
+            android:textSize="12sp"
+            android:inputType="numberSigned|numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/east_input_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/north_input_layout"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/east_input"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:hint="@string/east"
+            android:textSize="12sp"
+            android:inputType="numberSigned|numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/west_input_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/south_input_layout"
+        android:layout_toEndOf="@id/east_input_layout">
+
+        <EditText
+            android:id="@+id/west_input"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:hint="@string/west"
+            android:textSize="12sp"
+            android:inputType="numberSigned|numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/show_button"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/south_input_layout"
+        android:text="@string/show_earthquakes"
+        android:textSize="12sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/earthquakes_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/east_input_layout"/>
+
+</RelativeLayout>

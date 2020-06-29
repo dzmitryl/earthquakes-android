@@ -11,7 +11,7 @@ http://api.geonames.org/
 * [OkHttp](http://square.github.io/okhttp/)
 * [Mosby](http://hannesdorfmann.com/mosby/)
 * [Mockito](https://github.com/mockito/mockito)
-* [Robolictric](http://robolectric.org/)
+* [Robolectric](http://robolectric.org/)
 
 
 
